@@ -35,7 +35,9 @@ public class CitaService {
         existente.setPrioridad(cita.getPrioridad());
         existente.setNotas(cita.getNotas());
         existente.setNotificacionActiva(cita.getNotificacionActiva());
+        existente.setConfirmada(cita.getConfirmada());
         return repository.save(existente);
+
     }
 
     public void eliminar(Long id) {
